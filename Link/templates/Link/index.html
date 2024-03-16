@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="A useful tool for shortening long URLs | URL Shortener.">
     <title>URL Shortener</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="{% static "Link/style/reset.css" %}">
+    <link rel="stylesheet" href="{% static "Link/style/app.css" %}">
 </head>
 <body>
 <!-- All App Icons -->
@@ -23,11 +24,12 @@
 <div class="box">
     <div class="blue"></div>
     <div class="red"></div>
-    <form action="#" class="form">
+    <form action="" class="form" method="post">
+        {% csrf_token %}
         <h1 class="title">URL Shortener</h1>
         <div class="url">
             <label for="url">URL :</label>
-            <input type="url" id="url" placeholder="Enter your URL">
+            <input type="url" id="url" placeholder="Enter your URL" name="url">
         </div>
         <button type="submit">Cut short</button>
         <div class="url-shortened">
@@ -36,12 +38,12 @@
                 <svg class="copy-svg">
                     <use href="#copy-svg"></use>
                 </svg>
-                <input type="url" id="url-shortened" placeholder="Copy shortened URL" value="">
+                <input type="url" id="url-shortened" placeholder="Copy shortened URL" {% if link %}value="127.0.0.1:8000/{{ link }}"{% endif %}>
             </div>
         </div>
     </form>
 </div>
 
-<script src="script/app.js"></script>
+<script src="{% static "Link/script/app.js" %}"></script>
 </body>
 </html>

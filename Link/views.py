@@ -9,8 +9,8 @@ def home(request):
         return render(request, "Link/index.html")
     
     if request.method == "POST":
-        url = request.POST["URL"]
-        generate_short_link = get_random_string(10)
+        url = request.POST["url"]
+        generate_short_link = get_random_string(5)
         new_link = Link(
             link_address = url,
             short_link = generate_short_link
