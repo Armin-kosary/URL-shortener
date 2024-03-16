@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Link
 from django.utils.crypto import get_random_string
+from django.shortcuts import redirect
 # Create your views here.
 
 
@@ -17,3 +18,7 @@ def home(request):
         )
         new_link.save()
         return render(request, "Link/index.html", {"link" : new_link.short_link})
+    
+def redirect_link(request, ShortLink):
+    get_main_link = Link.objects.filter(short_link = ShortLink).first()
+    return redirect(get_main_link.link_address)
