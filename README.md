@@ -33,8 +33,8 @@ About URL Shortener 📰 : In this Web-Application you can convert your long URL
 
 
 <h3 align="left">Collaborators 👨‍💻:</h3>
-1-<a href="https://github.com/Armin-Kosary">Armin Kosari (BackEnd Developer)</a><br>
-2-<a href="https://github.com/Bahinkor">Mohammad Reza Bahin Kor (FrontEnd Developer)</a>
+1-<a href="https://github.com/Armin-Kosary">Armin Kosari</a> (BackEnd Developer)<br>
+2-<a href="https://github.com/Bahinkor">Mohammad Reza Bahin Kor</a> (FrontEnd Developer)
 <br><br>
 
 <h4 align="left">We hope to You can use and enjoy It :)☘❤</h4>
