@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
 /* Fonts */
 
 @font-face {
@@ -11,12 +18,14 @@
 }
 
 html{
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after{
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -26,8 +35,14 @@ body {
     background-color: #080710;
     font-family: "Poppins", serif;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100vh;
 }
@@ -43,9 +58,13 @@ input, button {
     position: relative;
 }
 
+/* Blue Shape */
+
 .blue {
     width: 200px;
     height: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1565C0), to(#2196F3));
+    background-image: -o-linear-gradient(#1565C0, #2196F3);
     background-image: linear-gradient(#1565C0, #2196F3);
     border-radius: 100%;
     position: absolute;
@@ -54,9 +73,12 @@ input, button {
     left: -100px;
 }
 
+/* Red Shape */
+
 .red{
     width: 200px;
     height: 200px;
+    background-image: -o-linear-gradient(225deg, #FFA726, #EF6C00);
     background-image: linear-gradient(225deg, #FFA726, #EF6C00);
     border-radius: 100%;
     position: absolute;
@@ -65,14 +87,19 @@ input, button {
     right: -110px;
 }
 
+/* Copy Notification */
+
 .notification {
     position: absolute;
     z-index: 1000;
     color: #e5e5e5;
     top: 5rem;
     font-size: 1.1rem;
+    -webkit-transition: all 150ms;
+    -o-transition: all 150ms;
     transition: all 150ms;
     background-color: rgba(67, 160, 71, 50%);
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     padding: 0.6rem 1.2rem;
     border-radius: 0.5rem;
@@ -83,7 +110,9 @@ input, button {
     background-color: rgba(255, 255, 255, 0.13);
     border: 2px solid rgba(255, 255, 255, 0.13);
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px #080710;
     box-shadow: 0 0 30px #080710;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -107,6 +136,8 @@ input, button {
     z-index: 999;
     cursor: pointer;
     color: #e5e5e5;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
     transition: all 200ms;
     top: 0.5rem;
     right: 0.2rem;
@@ -138,6 +169,26 @@ input{
     margin-top: 10px;
     padding-left: 10px;
     border: none;
+}
+
+::-webkit-input-placeholder{
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+::-moz-placeholder{
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder{
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+::-ms-input-placeholder{
+    color: #e5e5e5;
+    font-weight: 300;
 }
 
 ::placeholder{
@@ -182,16 +233,18 @@ button {
     }
 
     .form {
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
 }
 
 @media screen and (max-width: 992px) {
     .copy-svg {
-    cursor: default;
+        cursor: default;
     }
 
     .form {
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
 }
