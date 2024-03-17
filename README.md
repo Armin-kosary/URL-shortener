@@ -22,6 +22,7 @@ About URL Shortener 📰 : In this Web-Application you can convert your long URL
 
 
 <h3 align="left">If You want to run this Project on Your personal system 👇:</h3>
+<b align="left"><(Notice : Python must be installed in your system)/b>
 <b align="left">1- Clone this Repository on Your Directory (Repo Link : https://github.com/Armin-kosary/URL-shortener.git)</b><br>
 <b align="left">2- Open CMD on Directory</b><br>
 <b align="left">3- Type and run 👇</b><br>
