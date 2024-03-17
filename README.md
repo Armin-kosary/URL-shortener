@@ -25,7 +25,7 @@ About URL Shortener 📰 : In this Web-Application you can convert your long URL
 <b align="left">1- Clone this Repository on Your Directory (Repo Link : https://github.com/Armin-kosary/URL-shortener.git)</b><br>
 <b align="left">2- Open CMD on Directory</b><br>
 <b align="left">3- Type and run 👇</b><br>
-python manage.py runserver
+<b>python manage.py runserver</b>
 <br>
 <b align="left">4- Open <a href="http://127.0.0.1:8000">127.0.0.1:8000</a> on Your Web-Browser</b><br><br>
 <b align="left">Now , You can use It</b><br><br>
