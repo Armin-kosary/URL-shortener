@@ -22,11 +22,18 @@ About URL Shortener 📰 : In this Web-Application you can convert your long URL
 
 
 <h3 align="left">If You want to run this Project on Your personal system 👇:</h3>
-<b align="left">(Notice : Python must be installed in your system)</b><br>
+<b align="left">(Notice : Python & pip must be installed in your system)</b><br>
 <b align="left">1- Clone this Repository on Your Directory (Repo Link : https://github.com/Armin-kosary/URL-shortener.git)</b><br>
 <b align="left">2- Open CMD on Directory</b><br>
 <b align="left">3- Type and run 👇</b><br>
-<b>python manage.py runserver</b>
+
+```python
+pip install -r requirements.txt
+```
+
+```python
+python manage.py runserver
+```
 <br>
 <b align="left">4- Open <a href="http://127.0.0.1:8000">127.0.0.1:8000</a> on Your Web-Browser</b><br><br>
 <b align="left">Now , You can use It</b><br><br>
